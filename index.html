@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <meta charset="UTF-8">
-<title>Cute Pastel Calculator</title>
+<title>Calculator</title>
 
 <style>
   body {
@@ -86,8 +86,7 @@
   @keyframes blink {
     50% { opacity: 0; }
   }
-
-  /* 📱 MOBILE RESPONSIVENESS */
+  
 @media (max-width: 480px) {
   body {
     padding: 10px;
@@ -126,7 +125,6 @@
   }
 }
 
-/* 📱 EXTRA SMALL PHONES */
 @media (max-height: 600px) {
   body {
     align-items: flex-start;
@@ -143,10 +141,8 @@
 
 <body>
 
-<!-- 🌸 CALCULATOR -->
 <div class="calculator" id="calculator">
   <div class="display" id="display">
-    <!-- 💖 INPUT DISPLAY CODE IS HERE 💖 -->
     0
   </div>
 
@@ -175,7 +171,6 @@
   </div>
 </div>
 
-<!-- 💕 LYRICS SCREEN -->
 <div class="result-screen hidden" id="resultScreen">
 
   <div class="lyrics">
@@ -234,7 +229,7 @@
       } else {
         clearInterval(typingInterval);
       }
-    }, 80); // ⌨️ typing speed
+    }, 80);
   }
 
   music.addEventListener("timeupdate", () => {
@@ -258,3 +253,4 @@
 
 </body>
 </html>
+
